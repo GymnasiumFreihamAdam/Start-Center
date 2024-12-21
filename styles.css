@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Ubuntu', Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     margin: 0;
@@ -10,22 +10,18 @@ header {
     text-align: center;
     padding: 50px 0;
     position: relative;
-    /* Wichtig, um das Logo innerhalb des Headers zu positionieren */
 }
 
 header img#logo {
     position: fixed;
     top: 0;
     left: 20px;
-    /* Anpassbar, um das Logo dort zu platzieren, wo du es haben möchtest */
     z-index: 1000;
-    /* Damit es vor anderen Elementen bleibt */
 }
 
 header h1 {
     color: #0066cc;
     margin-top: 120px;
-    /* Platz lassen, damit der Text nicht vom Logo verdeckt wird */
 }
 
 main {
