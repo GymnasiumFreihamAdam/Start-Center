@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    /* Wichtig, um das Logo innerhalb des Headers zu positionieren */
+}
+
+header img#logo {
+    position: fixed;
+    top: 0;
+    left: 20px;
+    /* Anpassbar, um das Logo dort zu platzieren, wo du es haben möchtest */
+    z-index: 1000;
+    /* Damit es vor anderen Elementen bleibt */
+}
+
+header h1 {
+    color: #0066cc;
+    margin-top: 120px;
+    /* Platz lassen, damit der Text nicht vom Logo verdeckt wird */
+}
+
+main {
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #666;
+}
+
+#logo {
+    border-radius: 60px;
+}
