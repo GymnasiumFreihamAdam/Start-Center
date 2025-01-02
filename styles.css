@@ -116,3 +116,433 @@ footer {
     border-radius: 5px;
     cursor: pointer;
 }
+.btn-cool {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: 2px solid #3498db;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-cool::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.btn-cool:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-cool:hover {
+    color: #3498db;
+    background-color: #fff;
+}
+
+.btn-cool2 {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e74c3c;
+    border: 2px solid #e74c3c;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-cool2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.2;
+    transition: all 0.4s ease;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+}
+
+.btn-cool2:hover::before {
+    transform: scaleX(1);
+}
+
+/* Button 1: Neon Effekt */
+.btn-neon {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #111;
+    border: 2px solid #0f0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    transition: color 0.4s;
+}
+
+.btn-neon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(0, 255, 0, 0.7), transparent);
+    transition: all 0.4s;
+    transform: translateX(-100%);
+    z-index: -1;
+}
+
+.btn-neon:hover::before {
+    transform: translateX(100%);
+}
+
+.btn-neon:hover {
+    color: #0f0;
+}
+
+/* Button 2: Schwebender Effekt */
+.btn-hover {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
+}
+
+.btn-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(231, 76, 60, 0.5);
+}
+
+/* Button 3: Rotierender Effekt */
+.btn-rotate {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.4s ease;
+    overflow: hidden;
+}
+
+.btn-rotate::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%) rotate(0deg);
+    z-index: -1;
+}
+
+.btn-rotate:hover::before {
+    transform: translate(-50%, -50%) rotate(360deg);
+}
+
+.btn-rotate:hover {
+    background-color: #2980b9;
+}
+
+/* Button 1: Glühender Effekt */
+.btn-glow {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #ff4757;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 15px rgba(255, 71, 87, 0.6);
+    transition: all 0.4s ease;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 25px rgba(255, 71, 87, 1);
+    transform: scale(1.1);
+}
+
+/* Button 2: Schiebe-Effekt */
+.btn-slide {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.btn-slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+.btn-slide:hover::before {
+    left: 0;
+}
+
+/* Button 3: Blinken Effekt */
+.btn-blink {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #8e44ad;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Button 4: Schimmernder Effekt */
+.btn-shimmer {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.btn-shimmer::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: all 0.6s ease;
+    transform: translate(-50%, -50%) scale(0);
+    z-index: -1;
+}
+
+.btn-shimmer:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-shimmer:hover {
+    background-color: #e67e22;
+}
+
+/* Button 1: Wellen Effekt */
+.btn-wave {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.btn-wave::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.btn-wave:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-wave:hover {
+    background-color: #2980b9;
+}
+
+/* Button 2: Text Schatten Effekt */
+.btn-shadow {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 20px rgba(231, 76, 60, 0.4);
+}
+
+.btn-shadow::before {
+    content: 'Klick mich!';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    color: rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.4s ease;
+}
+
+.btn-shadow:hover::before {
+    color: rgba(0, 0, 0, 0.3);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* Button 3: Farbverlauf Effekt */
+.btn-gradient {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(45deg, #ff6b6b, #f7d794);
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.btn-gradient:hover {
+    background: linear-gradient(45deg, #f7d794, #ff6b6b);
+}
+
+/* Button 4: Lasereffekt */
+.btn-laser {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #2c3e50;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.btn-laser::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), rgba(44, 62, 80, 0.2));
+    transform: rotate(45deg);
+    transition: all 0.6s ease;
+    z-index: -1;
+}
+
+.btn-laser:hover::before {
+    top: 50%;
+    left: 50%;
+    transform: rotate(45deg) translate(-50%, -50%);
+}
+
+.btn-laser:hover {
+    background-color: #34495e;
+}
+
